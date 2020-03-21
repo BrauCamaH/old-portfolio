@@ -1,24 +1,27 @@
 import React from 'react';
 import image from '../assets/profile.jpg';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Image } from 'react-bootstrap';
 
-const Sidebar = props => {
-  const { sidebarData } = props;
-
+const PorfolioNav = props => {
+  const { data } = props;
   return (
-    <Navbar bg="ligdaht" expand="lg">
-      <img
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Image
         src={image}
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
+        width="40"
+        height="40"
+        className="m-2"
         alt="React Bootstrap logo"
+        roundedCircle
       />
-      <Navbar.Brand href="#about">Braulio Camarena</Navbar.Brand>
+      <Navbar.Brand href="#about">
+        {data.firstName} {data.lastName}
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#about">About</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#education">Education</Nav.Link>
           <Nav.Link href="#skills">Skills</Nav.Link>
           <Nav.Link href="#interests">Interests</Nav.Link>
@@ -28,4 +31,4 @@ const Sidebar = props => {
   );
 };
 
-export default Sidebar;
+export default PorfolioNav;

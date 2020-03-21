@@ -1,13 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css';
-import Sidebar from './components/Sidebar';
+import profileData from './profileData.json';
+
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Education from './components/Education';
+import Interest from './components/Interest';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+
+import { Container } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const interestRef = useRef(null);
   return (
     <div className="App">
-      <Sidebar></Sidebar>
+      <Navbar data={profileData.about} />
+      <Container fluid>
+        <About data={profileData.about} />
+        <hr className="m-0" />
+        <Projects data={profileData.projects} />
+        <hr className="m-0" />
+        <Education data={profileData.education} />
+        <hr className="m-0" />
+        <Skills data={profileData.skills} />
+        <hr className="m-0" />
+        <Interest ref={interestRef} data={profileData.interests} />
+      </Container>
     </div>
   );
 }
