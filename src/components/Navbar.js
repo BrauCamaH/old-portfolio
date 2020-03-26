@@ -5,7 +5,7 @@ import { Navbar, Nav, Image } from 'react-bootstrap';
 const PorfolioNav = props => {
   const { data } = props;
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="primary" variant="dark" expand="lg">
       <Image
         src={image}
         width="40"

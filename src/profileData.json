@@ -1,10 +1,10 @@
 {
   "about": {
-    "firstName": "First Name",
-    "lastName": "Last Name",
-    "phoneNumber": "Phone Number",
-    "bio": "User's descriptive bio",
-    "email": "User's email",
+    "firstName": "Braulio",
+    "lastName": "Camarena",
+    "phoneNumber": "+52 348 130 76 31",
+    "bio": "I am a student interested in web development, machine learning and game development. I love learn different topics like physics, entrepreneurship and health. My tech stack includes C#, Python, and Javascript. I use Node for the server side development and React for the frontend development. I have also worked with Unity. Actually I am learning machine learning with python.",
+    "email": "braulio.camarenah@gmail.com",
     "linkedin": "User's LinkedIn",
     "github": "User's GitHub"
   },
@@ -26,23 +26,37 @@
   ],
   "education": [
     {
-      "university": "University or School Name",
-      "degree": "Major",
-      "gpa": "GPA",
-      "fromDate": "Date of start",
-      "toDate": "Date of completion"
+      "university": "Instituto Tecnológico Jóse Mario Molina Campus Arandas",
+      "degree": "Bachelors Degree",
+      "fromDate": "August 2016",
+      "toDate": "January 2021"
     }
   ],
   "skills": [
     {
-      "name": "skill1"
+      "name": "C#"
     },
     {
-      "name": "skill2"
+      "name": "JavaScript"
+    },
+    {
+      "name": "Python"
+    },
+    {
+      "name": "Java"
+    },
+    {
+      "name": "Unity"
+    },
+    {
+      "name": "React"
+    },
+    {
+      "name": "Node"
     }
   ],
   "interests": {
-    "paragraphOne": "Descriptive detail about your interests for paragraph one",
-    "paragraphTwo": "Descriptive detail about your interests for paragraph two"
+    "paragraphOne": "I enjoy play sports, specially basketball and footbal. I usually run in the morning on sundays",
+    "paragraphTwo": "When forced indoors, I explore technology in the web development work, I enjoy read any kind of books. Also I spend a large amound of time with entrepreneurship topics.  "
   }
 }

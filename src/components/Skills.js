@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 const Skills = props => {
   const { data } = props;
   return (
@@ -8,14 +10,15 @@ const Skills = props => {
         id="skills"
       >
         <div className="w-100">
-          <h2 className="mb-5">Skills</h2>
-          <div className="subheading mb-3">
+          <h2 className="mb-5 text-primary">Skills</h2>
+          <h3 className=" lead text-secondary subheading mb-3">
             Programming Languages &amp; Tools
-          </div>
+          </h3>
           <div className="row">
             {data.map((data, index) => (
               <div key={index} className="col-6">
-                <p className="list-item">
+                <p className="lead list-item">
+                  <FontAwesomeIcon icon={faCheckCircle} color="green" />
                   <span className="ml-3">{data.name}</span>
                 </p>
               </div>

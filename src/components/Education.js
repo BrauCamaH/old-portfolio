@@ -7,7 +7,7 @@ const Education = props => {
       id="education"
     >
       <div className="w-100">
-        <h2 className="mb-5">Education</h2>
+        <h2 className="mb-5 text-primary">Education</h2>
         {data.map((data, index) => (
           <div
             key={index}
@@ -16,10 +16,9 @@ const Education = props => {
             <div className="resume-content">
               <h3 className="mb-0">{data.university}</h3>
               <div className="subheading mb-3">{data.degree}</div>
-              <p>{data.gpa}</p>
             </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">
+            <div className="lead resume-date text-md-right">
+              <span className="lead text-primary">
                 {data.fromDate} - {data.toDate}
               </span>
             </div>

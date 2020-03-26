@@ -9,9 +9,9 @@ const Interest = props => {
         id="interests"
       >
         <div className="w-100">
-          <h2 className="mb-5">Interests</h2>
-          <p>{data.paragraphOne}</p>
-          <p className="mb-0">{data.paragraphTwo}</p>
+          <h2 className="mb-5 text-primary">Interests</h2>
+          <p className="lead text-justify">{data.paragraphOne}</p>
+          <p className="lead mb-0 text-justify">{data.paragraphTwo}</p>
         </div>
       </section>
     </div>

@@ -11,7 +11,7 @@ import Skills from './components/Skills';
 
 import { Container } from 'react-bootstrap';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const interestRef = useRef(null);
