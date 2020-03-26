@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './App.css';
 import profileData from './profileData.json';
 
@@ -14,7 +14,6 @@ import { Container } from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const interestRef = useRef(null);
   return (
     <div className="App">
       <Navbar data={profileData.about} />
@@ -27,7 +26,7 @@ function App() {
         <hr className="m-0" />
         <Skills data={profileData.skills} />
         <hr className="m-0" />
-        <Interest ref={interestRef} data={profileData.interests} />
+        <Interest data={profileData.interests} />
       </Container>
     </div>
   );

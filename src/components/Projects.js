@@ -10,21 +10,40 @@ const Projects = props => {
       <div className="w-100">
         <h2 className="mb-5 text-primary">Projects</h2>
 
-        <Carousel>
-          <Carousel.Item>
-            <img
-              width={200}
-              height={200}
-              className="d-block w-100"
-              src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Circle-icons-portals-and-projects-logo.svg"
-              alt="First slide"
+        <Carousel
+          nextIcon={
+            <span
+              aria-hidden="true"
+              className="text-secondary bg-dark carousel-control-next-icon"
             />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              <Button>Info</Button>
-            </Carousel.Caption>
-          </Carousel.Item>
+          }
+          prevIcon={
+            <span
+              aria-hidden="true"
+              className=" bg-dark carousel-control-prev-icon"
+            />
+          }
+        >
+          {data.map(project => (
+            <Carousel.Item>
+              <img
+                maxWidth={200}
+                maxHeight={100}
+                className="d-block w-100"
+                src={require(`../assets/${project.image}`)}
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                <h3 className="text-secondary">{project.title}</h3>
+                <p className="text-dark font-weight-bold">
+                  {project.description}
+                </p>
+                <a href={project.githubLink}>
+                  <Button>Github repository</Button>
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
         </Carousel>
       </div>
     </section>

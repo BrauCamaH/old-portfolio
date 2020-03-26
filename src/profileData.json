@@ -10,18 +10,22 @@
   },
   "projects": [
     {
-      "position": "Web Developer",
-      "organization": "Company one",
-      "aboutWork": "Details about work here",
-      "fromDate": "Date of starting",
-      "toDate": "Ending Date"
+      "title": "Restasoft",
+      "description": "A web app that allows manage a restaurant´s sales.",
+      "githubLink": "https://github.com/BrauCamaH/restasoft",
+      "image": "restasoft.png"
     },
     {
-      "position": "App Developer",
-      "organization": "Company 2",
-      "aboutWork": "Details about work here",
-      "fromDate": "Date of starting",
-      "toDate": "ending date"
+      "title": "Mongo-client",
+      "description": "The simple mongodb client",
+      "githubLink": "https://github.com/BrauCamaH/mongo-client",
+      "image": "mongo-client.png"
+    },
+    {
+      "title": "PigAdmin",
+      "description": "A pig management program (old project)",
+      "githubLink": "https://github.com/BrauCamaH/PigAdmind",
+      "image": "pigadmin.png"
     }
   ],
   "education": [
@@ -56,7 +60,7 @@
     }
   ],
   "interests": {
-    "paragraphOne": "I enjoy play sports, specially basketball and footbal. I usually run in the morning on sundays",
+    "paragraphOne": "I enjoy play sports, specially basketball and footbal. I usually run on weekends.",
     "paragraphTwo": "When forced indoors, I explore technology in the web development work, I enjoy read any kind of books. Also I spend a large amound of time with entrepreneurship topics.  "
   }
 }

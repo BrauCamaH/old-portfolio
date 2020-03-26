@@ -1,9 +1,10 @@
 import React from 'react';
-import {} from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+
 const Interest = props => {
-  const { ref, data } = props;
+  const { data } = props;
   return (
-    <div ref={ref}>
+    <div>
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="interests"
@@ -14,6 +15,14 @@ const Interest = props => {
           <p className="lead mb-0 text-justify">{data.paragraphTwo}</p>
         </div>
       </section>
+      <Image
+        rounded
+        fluid
+        width={600}
+        height={450}
+        className="mb-5"
+        src={require(`../assets/highlands.jpg`)}
+      ></Image>
     </div>
   );
 };
