@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel, Button, Image } from 'react-bootstrap';
 const Projects = props => {
   const { data } = props;
   return (
@@ -26,20 +26,20 @@ const Projects = props => {
         >
           {data.map(project => (
             <Carousel.Item>
-              <img
-                maxWidth={200}
-                maxHeight={100}
+              <Image
                 className="d-block w-100"
                 src={require(`../assets/${project.image}`)}
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3 className="text-secondary">{project.title}</h3>
+                <h5 className="text-secondary">{project.title}</h5>
                 <p className="text-dark font-weight-bold">
                   {project.description}
                 </p>
                 <a href={project.githubLink}>
-                  <Button>Github repository</Button>
+                  <Button size="sm" variant="info">
+                    Github repository
+                  </Button>
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
